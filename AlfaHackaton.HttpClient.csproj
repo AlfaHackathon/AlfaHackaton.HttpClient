@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PackageId>AlfaHackaton.HttpClient</PackageId>
+    <Version>1.1.1</Version>
+    <Authors>AlfaHackathon</Authors>
+    <RepositoryUrl>https://github.com/AlfaHackathon/AlfaHackaton.HttpClient</RepositoryUrl>
+    <Description>Typed HTTP client with JSON requests, cancellation and factory-managed connections.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AlfaHackaton.Context" Version="1.0.1" />
+    <PackageReference Include="AlfaHackaton.Result" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.12" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Tests/**/*.cs" />
+    <None Include="README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

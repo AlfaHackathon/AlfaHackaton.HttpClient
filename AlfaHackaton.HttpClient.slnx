@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/AlfaHackaton.HttpClient.Tests.csproj" />
+  </Folder>
+  <Project Path="AlfaHackaton.HttpClient.csproj" />
+</Solution>
